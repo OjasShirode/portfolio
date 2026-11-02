@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ojas Shirode | Portfolio</title>
+<meta name="description" content="Ojas Shirode — Computer Engineering student and full-stack developer. Projects, skills, certifications and achievements.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- apply saved theme before first paint (prevents a dark flash when light mode is saved) -->
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+
+<!-- ================= ICON SPRITE ================= -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4zM22 2 11 13"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 17v4M17 19h4"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M9 21v-6h6v6M12 10h.01"/></symbol>
+  <!-- Brand logos (filled) -->
+  <symbol id="b-github" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  <symbol id="b-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></symbol>
+  <symbol id="b-leetcode" viewBox="0 0 24 24"><path fill="#FFA116" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0z"/><path fill="#B3B1B0" d="M11.617 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></symbol>
+  <symbol id="b-gmail" viewBox="0 0 24 24"><path fill="#4285F4" d="M1.636 21.545h3.819v-9.273L0 8.182v11.727c0 .905.732 1.636 1.636 1.636z"/><path fill="#34A853" d="M18.545 21.545h3.819c.904 0 1.636-.731 1.636-1.636V8.182l-5.455 4.09z"/><path fill="#FBBC04" d="M18.545 3.82v8.452L24 8.182V5.455c0-2.024-2.31-3.178-3.927-1.964z"/><path fill="#EA4335" d="M5.455 12.272V3.82L12 8.727l6.545-4.909v8.454L12 17.18z"/><path fill="#C5221F" d="M0 5.455v2.727l5.455 4.09V3.82L3.927 2.676C2.31 1.49 0 2.643 0 4.667z"/></symbol>
+  <symbol id="b-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.25" fill="currentColor" stroke="none"/></symbol>
+</defs></svg>
+
+<!-- Intro: monogram draws itself, boot lines cycle, then the screen splits open -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-half top"></div><div class="ld-half bot"></div>
+  <div class="ld-core">
+    <div class="ld-mark">
+      <svg viewBox="0 0 160 160">
+        <defs><linearGradient id="ldg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset=".5" stop-color="#22d3ee"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs>
+        <circle class="ld-ring r1" cx="80" cy="80" r="72"/>
+        <circle class="ld-ring r2" cx="80" cy="80" r="60"/>
+        <circle class="ld-ring r3" cx="80" cy="80" r="48"/>
+        <text class="ld-os" x="80" y="97" text-anchor="middle">OS</text>
+        <circle class="ld-dot" cx="80" cy="8" r="4"/>
+      </svg>
+    </div>
+    <div class="ld-name">OJAS SHIRODE</div>
+    <div class="ld-line"><span class="pr">&gt;</span> <span id="ldtxt">booting portfolio</span><span class="caret"></span></div>
+    <div class="ld-bar"><b id="ldb"></b></div>
+  </div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="bar"></div>
+<div class="aurora"><i></i><i></i><i></i></div>
+<div class="gridlines"></div>
+<canvas id="net"></canvas>
+<div class="grain"></div>
+
+<nav>
+  <a href="#home" class="logo"><span class="grad">OS.</span><span class="logo-name">Ojas Shirode</span></a>
+  <div class="links" id="links">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Stack</a>
+    <a href="#projects">Projects</a><a href="#experience">Work</a><a href="#education">Education</a>
+    <a href="#certs">Certs</a><a href="#achievements">Awards</a><a href="#contact">Contact</a>
+  </div>
+  <button class="icon-btn" id="theme" aria-label="Toggle theme"></button>
+  <button class="icon-btn" id="burger" aria-label="Menu"><svg class="ic"><use href="#i-menu"/></svg></button>
+</nav>
+
+<!-- ================= HOME ================= -->
+<section id="home">
+  <div class="wrap hero">
+    <div>
+      <div class="badge"><span class="dotp"></span> Open To Internships &amp; Collabs</div>
+      <h1 id="name">
+        <span class="line" data-t="OJAS"></span>
+        <span class="line" data-t="SHIRODE" data-color="1"></span>
+      </h1>
+      <div class="role">&gt; <span id="typed"></span><span class="caret"></span></div>
+      <p class="lead">I build practical, real-time web applications with Firebase, REST APIs and a strong grounding in Data Structures &amp; Algorithms — exploring the edges of AI, web and cloud along the way.</p>
+      <div class="quote" id="hero-quote">"Building. Learning. Improving."</div>
+      <div class="btns">
+        <a href="#projects" class="btn primary">View My Work <svg class="ic arr"><use href="#i-ur"/></svg></a>
+        <a href="#" id="resume-btn" class="btn"><svg class="ic"><use href="#i-file"/></svg> View Resume</a>
+      </div>
+    </div>
+    <div class="orbit-wrap">
+      <div class="orbit" id="orbit1"></div>
+      <div class="orbit o2" id="orbit2"></div>
+      <div class="avatar">
+        <img id="profile-photo" alt="Ojas Shirode" hidden>
+        <div class="init" id="init">OS</div>
+      </div>
+    </div>
+  </div>
+  <div class="marquee"><div class="mq-track" id="mq"></div></div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow rv">01 — About</div>
+    <h2 class="rv d1">Developer <span class="grad">Profile.</span></h2>
+    <div class="bento">
+      <div class="card b-bio rv spot">
+        <h3 class="ico-title"><svg class="ic"><use href="#i-user"/></svg> Hello, Nice To Meet You</h3>
+        <p>Computer Engineering undergraduate with hands-on expertise in Full-Stack Web Development, Java, Python and JavaScript. Skilled in building scalable, real-time web applications using Firebase, integrating REST APIs, and applying core Data Structures, Algorithms and database management concepts.</p>
+        <p>Currently pursuing a B.E. in Computer Engineering at Pimpri Chinchwad College of Engineering &amp; Research, Ravet — carrying that momentum forward from a strong diploma foundation in the same field.</p>
+      </div>
+      <div class="card b-stat rv d1 spot"><b class="grad" id="stat-cgpa" data-count="9.36">9.36</b><span class="l">Current CGPA · B.E.</span></div>
+      <div class="card b-stat rv d2 spot"><b class="grad" id="stat-projects">–</b><span class="l">Projects Built</span></div>
+      <div class="card b-wide rv d2 spot">
+        <h4 class="ico-title"><svg class="ic"><use href="#i-target"/></svg> Currently Exploring</h4>
+        <div class="pills" id="exploring"></div>
+      </div>
+      <div class="card b-stat rv d3 spot"><b class="grad" id="stat-certs">–</b><span class="l">Certifications</span></div>
+      <div class="card b-wide b-w3 rv d3 spot">
+        <h4 class="ico-title"><svg class="ic"><use href="#i-spark"/></svg> Quick Facts</h4>
+        <div class="pills"><span>Full-Stack Development</span><span>Open To Internships</span><span id="about-location">Pune, Maharashtra</span><span>Diploma · 92.46%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow rv">02 — Tech Stack</div>
+    <h2 class="rv d1">Tools I <span class="grad">Build With.</span></h2>
+    <div class="skills" id="skills-grid"></div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS (Supabase) ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow rv">03 — Projects</div>
+    <h2 class="rv d1">Turning Ideas Into <span class="grad">Real Solutions.</span></h2>
+    <div class="pgrid" id="projects-container"><div class="skel"></div><div class="skel"></div></div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow rv">04 — Experience</div>
+    <h2 class="rv d1">Work <span class="grad">Log.</span></h2>
+    <div class="card term rv spot">
+      <div class="term-head"><i></i><i></i><i></i><span>experience.log</span></div>
+      <div class="term-body">
+        <span class="pr">&gt;</span> <span class="cm">Internship</span><br>
+        <span class="in"><b>Role:</b> Web Development Intern</span>
+        <span class="in"><b>Org:</b> Web Technology Platform</span>
+        <span class="in"><b>Duration:</b> 2024 · Status: Completed</span><br>
+        <span class="pr">&gt;</span> <span class="cm">Log</span><br>
+        <span class="in">Developed responsive UIs with HTML, CSS and JS — improved UI/UX consistency across platforms.</span>
+        <span class="in">Integrated REST APIs and Firebase backend services into dynamic client-side apps.</span>
+        <span class="in">Used Git for version control, collaborating across teams in an Agile environment.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+  <div class="wrap">
+    <div class="eyebrow rv">05 — Education</div>
+    <h2 class="rv d1">Academic <span class="grad">Timeline.</span></h2>
+    <div class="tl">
+      <div class="tl-item rv"><div class="card spot"><small>2025 — PRESENT</small><h4><svg class="ic"><use href="#i-cap"/></svg> B.E. Computer Engineering</h4><p>Pimpri Chinchwad College of Engineering &amp; Research, Ravet</p><span class="score" id="edu-cgpa">CGPA 9.36</span></div></div>
+      <div class="tl-item rv"><div class="card spot"><small>2022 — 2025</small><h4><svg class="ic"><use href="#i-book"/></svg> Diploma In Computer Engineering</h4><p>Y.B. Patil Polytechnic, Akurdi, Pune</p><span class="score">92.46%</span></div></div>
+      <div class="tl-item rv"><div class="card spot"><small>2022</small><h4><svg class="ic"><use href="#i-school"/></svg> 10th Standard</h4><p>P.E.S. Modern High School, Shivajinagar, Pune</p><span class="score">86.40%</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS (Supabase) ================= -->
+<section id="certs">
+  <div class="wrap">
+    <div class="eyebrow rv">06 — Certifications</div>
+    <h2 class="rv d1">Learning Beyond <span class="grad">The Classroom.</span></h2>
+    <div class="cgrid" id="certs-container"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
+  </div>
+</section>
+
+<!-- ================= ACHIEVEMENTS (Supabase) ================= -->
+<section id="achievements">
+  <div class="wrap">
+    <div class="eyebrow rv">07 — Achievements</div>
+    <h2 class="rv d1">Milestones That <span class="grad">Reflect Growth.</span></h2>
+    <div class="agrid" id="achievements-container"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow rv">08 — Contact</div>
+    <div class="card cta rv spot">
+      <h2>Let's Build<br><span class="grad">Something Great.</span></h2>
+      <p>Want to build something together? Have an opportunity or an idea? My inbox is always open.</p>
+      <div class="btns"><a href="mailto:oshirode07@gmail.com" id="contact-email-btn" class="btn primary"><svg class="ic"><use href="#i-mail"/></svg> Say Hello</a><a href="#" id="resume-btn2" class="btn"><svg class="ic"><use href="#i-file"/></svg> Resume</a></div>
+    </div>
+    <div class="contact">
+      <div class="card social rv spot">
+        <a href="mailto:oshirode07@gmail.com" id="contact-email-link"><div class="tile t-mail"><svg class="bi"><use href="#b-gmail"/></svg></div><span id="contact-email-text">oshirode07@gmail.com</span></a>
+        <a href="https://www.linkedin.com/in/ojasshirode" target="_blank" rel="noopener"><div class="tile t-in"><svg class="bi"><use href="#b-linkedin"/></svg></div><span>LinkedIn</span></a>
+        <a href="https://github.com/OjasShirode" target="_blank" rel="noopener"><div class="tile t-gh"><svg class="bi"><use href="#b-github"/></svg></div><span>GitHub</span></a>
+        <a href="https://leetcode.com/u/Ojas77/" target="_blank" rel="noopener"><div class="tile t-lc"><svg class="bi"><use href="#b-leetcode"/></svg></div><span>LeetCode</span></a>
+        <a href="https://www.instagram.com/ojas.shirode" target="_blank" rel="noopener"><div class="tile t-ig"><svg class="ic"><use href="#b-instagram"/></svg></div><span>Instagram</span></a>
+      </div>
+      <form class="card rv d1" id="form">
+        <input type="text" id="n" placeholder="Your Name" required autocomplete="name">
+        <input type="email" id="e" placeholder="Your Email" required autocomplete="email">
+        <textarea id="m" placeholder="Your Message" required></textarea>
+        <button class="btn primary" type="submit"><svg class="ic"><use href="#i-send"/></svg> Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<button class="icon-btn" id="top" aria-label="Back to top"><svg class="ic"><use href="#i-up"/></svg></button>
+
+<!-- Resume modal -->
+<div class="modal" id="resume-modal">
+  <div class="top"><b><svg class="ic"><use href="#i-file"/></svg> Ojas Shirode — Resume</b>
+    <div class="acts"><a id="resume-dl" class="btn primary sm" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-down"/></svg> Download</a><button class="btn sm" id="resume-close"><svg class="ic"><use href="#i-x"/></svg> Close</button></div>
+  </div>
+  <div class="frame"><iframe id="resume-iframe" src="about:blank" title="Resume"></iframe></div>
+</div>
+
+<!-- Certificate lightbox -->
+<div class="modal lb" id="lb">
+  <button class="btn sm x" id="lb-close"><svg class="ic"><use href="#i-x"/></svg> Close</button>
+  <img id="lb-img" src="" alt="Certificate">
+  <div class="cap"><b id="lb-name"></b><span id="lb-issuer"></span></div>
+</div>
+
+<!-- 1) UI behaviour  2) live data (Firebase + Supabase) -->
+<script src="script.js"></script>
+<script type="module" src="data.js"></script>
+</body>
+</html>
