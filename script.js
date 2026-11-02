@@ -75,7 +75,7 @@ setTimeout(()=>{if(photo.hidden)initEl.classList.add('show')},6000);
   const L=$('#loader'),txt=$('#ldtxt'),bar=$('#ldb');
   const steps=['booting portfolio','connecting firebase','syncing supabase','loading projects','ready'];
   let i=0,finished=false;
-  const finish=()=>{if(finished)return;finished=true;L.classList.add('done');setTimeout(()=>L.remove(),1500)};
+  const finish=()=>{if(finished)return;finished=true;L.classList.add('done');setTimeout(()=>L.remove(),2400)};
   (function next(){
     txt.textContent=steps[i];bar.style.width=((i+1)/steps.length*100)+'%';
     if(i<steps.length-1){i++;setTimeout(next,520)}else setTimeout(finish,650);
